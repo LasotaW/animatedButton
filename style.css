@@ -7,6 +7,8 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 50px;
+    height: 50px;
 }
 
 .button-bg{
@@ -16,8 +18,8 @@ body{
     opacity: 0.3;
     border-radius: 100%;
     position: absolute;
-    top: -25%;
-    left: -50%;
+    top: -15%;
+    left: -25%;
     width:50px;
     height: 50px;
 }
@@ -28,4 +30,11 @@ body{
     padding: 10px;
     display:inline-block;
     transform: rotate(45deg);
+    animation: arrowAnimation 1s infinite;
+    overflow:hidden;
+}
+
+@keyframes arrowAnimation{
+    from{margin-top: -20px;}
+    to{margin-top: 10px;}
 }
